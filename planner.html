@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Academic Planner | InimfonAbasi</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ===== Header ===== -->
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="logo">INIMFONABASI</a>
+
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="about.html">About</a></li>
+
+          <li><a href="projects.html">Projects</a></li>
+
+          <li><a href="gallery.html">Gallery</a></li>
+
+          <li><a href="planner.html" class="active">Planner</a></li>
+
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <main>
+      <section class="planner">
+        <h1>Academic Planner</h1>
+
+        <p class="planner-intro">
+          Organize tasks, stay productive, and keep track of academic goals.
+        </p>
+
+        <div class="planner-container">
+          <!-- Dashboard -->
+          <section class="planner-dashboard">
+            <!-- Left Side -->
+            <div class="dashboard-left">
+              <h2>Today's Overview</h2>
+
+              <div class="task-input">
+                <input
+                  type="text"
+                  id="task-input"
+                  placeholder="What do you want to accomplish today?"
+                />
+
+                <button id="add-task" class="btn-tetiary">Add Task</button>
+              </div>
+
+              <div class="stats">
+                <div class="stat">
+                  <h3>Total</h3>
+                  <span id="total-tasks">0</span>
+                </div>
+
+                <div class="stat">
+                  <h3>Completed</h3>
+                  <span id="completed-tasks">0</span>
+                </div>
+
+                <div class="stat">
+                  <h3>Pending</h3>
+                  <span id="pending-tasks">0</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side -->
+
+            <div class="dashboard-right">
+              <div class="progress-ring">
+                <svg width="170" height="170">
+                  <circle class="bg-circle" cx="85" cy="85" r="70"></circle>
+
+                  <circle
+                    class="progress-circle"
+                    cx="85"
+                    cy="85"
+                    r="70"
+                  ></circle>
+                </svg>
+
+                <div class="progress-text">
+                  <span id="progress-percent">0%</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="tasks-section">
+            <h2>Today's Tasks</h2>
+
+            <ul id="task-list"></ul>
+          </section>
+
+          <section class="completed-section">
+            <h2>Completed Tasks</h2>
+
+            <ul id="completed-list"></ul>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <div class="footer-container">
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+
+          <a href="about.html">About</a>
+
+          <a href="projects.html">Projects</a>
+
+          <a href="gallery.html">Gallery</a>
+
+          <a href="planner.html">Planner</a>
+
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <p>© <span id="year"></span> InimfonAbasi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/planner.js"></script>
+  </body>
+</html>

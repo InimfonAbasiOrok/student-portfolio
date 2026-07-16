@@ -1,0 +1,161 @@
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .hero-text p {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 280px;
+  }
+
+  .hero-content {
+    padding: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+
+    padding: 18px;
+
+    text-align: center;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .hero {
+    gap: 25px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-text {
+    padding: 10px;
+  }
+
+  .hero-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .quote-card {
+    display: none;
+  }
+
+  .planner {
+    width: 95%;
+
+    margin: 50px auto;
+  }
+
+  .planner-container {
+    padding: 20px;
+  }
+
+  .planner h1 {
+    font-size: 2.4rem;
+  }
+
+  .planner-dashboard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .task-input {
+    flex-direction: column;
+  }
+
+  .task-input input,
+  .task-input button {
+    width: 100%;
+  }
+
+  .stats {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .stat {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .stat span {
+    font-size: 1.6rem;
+  }
+
+  .progress-ring {
+    width: 190px;
+    height: 190px;
+    margin: auto;
+  }
+
+  .progress-ring svg {
+    width: 190px;
+    height: 190px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-left,
+  .dashboard-right {
+    width: 100%;
+
+    flex: none;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.about-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.about-card {
+  width: 100%;
+}
+
+.hobbies {
+  grid-template-columns: repeat(2, 1fr);
+}
