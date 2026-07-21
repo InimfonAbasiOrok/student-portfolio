@@ -83,33 +83,25 @@ const observer = new IntersectionObserver(
 );
 
 factCards.forEach((card) => observer.observe(card));
+
 // =========================
-// IMAGE LIGHTBOX
+// ROADMAP
 // =========================
+const roadmap = document.querySelector(".roadmap");
 
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeLightbox = document.querySelector(".close-lightbox");
+if (roadmap) {
+  const roadmapObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          roadmap.classList.add("animate");
+        }
+      });
+    },
+    {
+      threshold: 0.3,
+    },
+  );
 
-document.querySelectorAll(".art-card img").forEach((image) => {
-  image.addEventListener("click", () => {
-    lightbox.style.display = "flex";
-    lightboxImg.src = image.src;
-    lightboxImg.alt = image.alt;
-  });
-});
-
-closeLightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
-
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
-  }
-});
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
-    lightbox.style.display = "none";
-  }
-});
+  roadmapObserver.observe(roadmap);
+}

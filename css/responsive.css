@@ -159,3 +159,11 @@
 .hobbies {
   grid-template-columns: repeat(2, 1fr);
 }
+
+.journey-grid {
+  grid-template-columns: 1fr;
+}
+
+.cyber-journey h2 {
+  font-size: 2.2rem;
+}

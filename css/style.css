@@ -414,6 +414,213 @@ Hero Section
   transition-delay: 0.6s;
 }
 
+.cyber-journey {
+  width: 90%;
+  max-width: 1200px;
+  margin: 120px auto;
+  text-align: center;
+}
+
+.cyber-journey h2 {
+  font-size: 2.8rem;
+  color: #321c4e;
+  margin-bottom: 20px;
+}
+
+.journey-intro {
+  max-width: 760px;
+  margin: auto;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.journey-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 30px;
+}
+
+.journey-card {
+  background: white;
+
+  padding: 35px 25px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+
+  transition: 0.35s;
+}
+
+.journey-card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.18);
+}
+
+.journey-card span {
+  font-size: 3rem;
+}
+
+.journey-card h3 {
+  margin: 18px 0;
+
+  color: #7c3aed;
+}
+
+.journey-card p {
+  line-height: 1.7;
+
+  color: #666;
+}
+/*=========================
+ROADMAP
+=========================*/
+
+.roadmap {
+  width: 90%;
+  max-width: 900px;
+  margin: 120px auto;
+}
+
+.roadmap h2 {
+  text-align: center;
+  color: #321c4e;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.roadmap-intro {
+  text-align: center;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 60px;
+}
+
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  font-weight: 600;
+}
+
+.progress-bar {
+  height: 16px;
+
+  background: #ececec;
+
+  border-radius: 50px;
+
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+
+  border-radius: 50px;
+
+  background: linear-gradient(90deg, #7c3aed, #b794f4);
+}
+.html {
+  width: 100%;
+}
+
+.css {
+  width: 100%;
+}
+
+.js {
+  width: 70%;
+}
+
+.git {
+  width: 80%;
+}
+
+.github {
+  width: 80%;
+}
+
+.python {
+  width: 30%;
+}
+
+.linux {
+  width: 20%;
+}
+
+.networking {
+  width: 40%;
+}
+.progress {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #7c3aed, #b794f4);
+
+  width: 0;
+  transition: width 2s ease;
+}
+
+.roadmap.animate .html {
+  width: 100%;
+}
+
+.roadmap.animate .css {
+  width: 100%;
+}
+
+.roadmap.animate .js {
+  width: 70%;
+}
+
+.roadmap.animate .git {
+  width: 80%;
+}
+
+.roadmap.animate .github {
+  width: 80%;
+}
+
+.roadmap.animate .python {
+  width: 30%;
+}
+
+.roadmap.animate .linux {
+  width: 20%;
+}
+
+.roadmap.animate .networking {
+  width: 40%;
+}
+
+@keyframes growBar {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.roadmap-item {
+  transition: 0.35s;
+}
+
+.roadmap-item:hover {
+  transform: translateX(10px);
+}
+
 /* About Page */
 
 .about {
