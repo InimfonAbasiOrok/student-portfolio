@@ -813,6 +813,136 @@ ROADMAP
 
   margin: 0 20px 25px;
 }
+
+/* ==========================
+FUTURE PROJECTS
+========================== */
+
+.future-projects {
+  width: 90%;
+  max-width: 1100px;
+
+  margin: 100px auto;
+}
+
+.future-projects h2 {
+  text-align: center;
+
+  color: #321c4e;
+
+  font-size: 2.8rem;
+
+  margin-bottom: 15px;
+}
+
+.future-intro {
+  text-align: center;
+
+  color: #666;
+
+  line-height: 1.8;
+
+  max-width: 700px;
+
+  margin: 0 auto 50px;
+}
+
+.future-project-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 30px;
+}
+
+.future-project-card {
+  background: rgba(255, 255, 255, 0.45);
+
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  padding: 30px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.35s ease;
+}
+
+.future-project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-icon {
+  font-size: 2.5rem;
+
+  margin-bottom: 15px;
+}
+
+.future-project-card h3 {
+  color: #321c4e;
+
+  margin-bottom: 12px;
+}
+
+.future-project-card p {
+  color: #555;
+
+  line-height: 1.7;
+}
+
+/* Status badges */
+
+.project-status {
+  display: inline-block;
+
+  padding: 6px 15px;
+
+  border-radius: 20px;
+
+  font-size: 0.85rem;
+
+  margin-bottom: 15px;
+}
+
+/* Status colors */
+
+.in-progress {
+  background: #fef3c7;
+}
+
+.planned {
+  background: #dbeafe;
+}
+
+.learning {
+  background: #ede9fe;
+}
+
+/* Tags */
+
+.project-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+.project-tags span {
+  background: #f1e8ff;
+
+  color: #5b21b6;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  font-size: 0.8rem;
+}
+
 /* ==========================
    Planner Page
 ========================== */
@@ -1115,6 +1245,7 @@ button:focus {
 
   font-weight: 700;
 }
+
 .progress-ring {
   position: relative;
 
