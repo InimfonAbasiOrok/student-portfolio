@@ -570,49 +570,6 @@ ROADMAP
   width: 0;
   transition: width 2s ease;
 }
-
-.roadmap.animate .html {
-  width: 100%;
-}
-
-.roadmap.animate .css {
-  width: 100%;
-}
-
-.roadmap.animate .js {
-  width: 70%;
-}
-
-.roadmap.animate .git {
-  width: 80%;
-}
-
-.roadmap.animate .github {
-  width: 80%;
-}
-
-.roadmap.animate .python {
-  width: 30%;
-}
-
-.roadmap.animate .linux {
-  width: 20%;
-}
-
-.roadmap.animate .networking {
-  width: 40%;
-}
-
-@keyframes growBar {
-  from {
-    transform: scaleX(0);
-  }
-
-  to {
-    transform: scaleX(1);
-  }
-}
-
 .roadmap-item {
   transition: 0.35s;
 }

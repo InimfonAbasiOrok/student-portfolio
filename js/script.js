@@ -83,25 +83,3 @@ const observer = new IntersectionObserver(
 );
 
 factCards.forEach((card) => observer.observe(card));
-
-// =========================
-// ROADMAP
-// =========================
-const roadmap = document.querySelector(".roadmap");
-
-if (roadmap) {
-  const roadmapObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          roadmap.classList.add("animate");
-        }
-      });
-    },
-    {
-      threshold: 0.3,
-    },
-  );
-
-  roadmapObserver.observe(roadmap);
-}
