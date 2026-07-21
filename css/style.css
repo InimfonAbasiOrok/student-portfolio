@@ -530,7 +530,12 @@ ROADMAP
   border-radius: 50px;
 
   background: linear-gradient(90deg, #7c3aed, #b794f4);
+
+  transform-origin: left;
+
+  animation: growBar 2s ease forwards;
 }
+
 .html {
   width: 100%;
 }
@@ -561,14 +566,6 @@ ROADMAP
 
 .networking {
   width: 40%;
-}
-.progress {
-  height: 100%;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #7c3aed, #b794f4);
-
-  width: 0;
-  transition: width 2s ease;
 }
 .roadmap-item {
   transition: 0.35s;
