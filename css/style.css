@@ -1666,7 +1666,7 @@ video {
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-  animation: floatQuote 6s ease-in-out infinite;
+  animation: floatQuote 4s ease-in-out infinite;
 
   will-change: transform;
 }
@@ -1677,7 +1677,7 @@ video {
   }
 
   50% {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
   }
 
   100% {
