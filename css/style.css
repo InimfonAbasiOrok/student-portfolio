@@ -1666,7 +1666,23 @@ video {
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 
-  animation: floatQuote 5s ease-in-out infinite;
+  animation: floatQuote 6s ease-in-out infinite;
+
+  will-change: transform;
+}
+
+@keyframes floatQuote {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .quote-card p {
